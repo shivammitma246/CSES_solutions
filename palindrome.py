@@ -23,10 +23,8 @@ else:
             string=string+odd
         for i in dict:
             if i!=odd:
-                for j in range(dict[i]//2):
-                    string=i+string+i
+                string=i*(dict[i]//2)+string+i*(dict[i]//2)
     else:
         for i in dict:
-            for j in range(dict[i]//2):
-                string=i+string+i
+            string=i*(dict[i]//2)+string+i*(dict[i]//2)
 print(string)
